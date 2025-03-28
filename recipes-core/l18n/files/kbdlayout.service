@@ -1,0 +1,8 @@
+[Unit]
+Description=Loads custom keymap if available
+
+[Service]
+ExecStart=/bin/sh -c '/usr/bin/loadkeys de-latin1'
+
+[Install]
+WantedBy=multi-user.target
