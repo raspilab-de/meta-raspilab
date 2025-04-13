@@ -1,0 +1,7 @@
+[WinSRV02]
+Driver=FreeTDS
+Description=Test2 database
+Trace=No
+Server=192.168.2.120
+Port=1433
+Database=Test2

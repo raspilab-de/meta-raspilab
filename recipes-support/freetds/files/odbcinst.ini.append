@@ -1,0 +1,4 @@
+[FreeTDS]
+Description = TDS driver (Sybase/MS SQL)
+Driver = /usr/lib/libtdsodbc.so.0
+UsageCount = 1

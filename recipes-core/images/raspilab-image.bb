@@ -5,13 +5,13 @@ SDIMG_ROOTFS_TYPE = "ext4.xz"
 
 IMAGE_FEATURES += "splash"
 
+GLIBC_GENERATE_LOCALES="de_DE.ISO-8859-1 de_DE.UTF-8 en_US.ISO-8859-1 en_US.UTF-8 en_GB.ISO-8859-1 en_GB.UTF-8"
+IMAGE_LINGUAS = "de-de en-us en-gb"
+ENABLE_BINARY_LOCALE_GENERATION = "1"
+
 LICENSE = "MIT"
 
 inherit core-image
-
-GLIBC_GENERATE_LOCALES="de_DE.UTF-8 en_US.UTF-8"
-IMAGE_LINGUAS = "de-de"
-ENABLE_BINARY_LOCALE_GENERATION = "1"
 
 CORE_OS = "\
     openssh \
@@ -40,6 +40,7 @@ QT = " \
 
 APPS = " \
     hellowidget \
+    sqldemo \
 "
 
 FONTS = "\
