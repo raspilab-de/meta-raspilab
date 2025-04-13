@@ -13,8 +13,6 @@ SRC_URI = " \
 DEPENDS += "qtbase wayland"
 RDEPENDS:${PN} += "qtwayland"
 
-S = "${WORKDIR}"
-
 do_install:append() {
     install -d ${D}${bindir}
     install -m 0775 hellowidget ${D}${bindir}
