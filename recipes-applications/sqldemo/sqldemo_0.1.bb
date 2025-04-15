@@ -11,6 +11,8 @@ SRC_URI = " \
     file://odbc.ini.append \
 "
 
+S = "${WORKDIR}"
+
 DEPENDS += "qtbase wayland"
 RDEPENDS:${PN} += "qtwayland freetds"
 

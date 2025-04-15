@@ -10,6 +10,8 @@ SRC_URI = " \
             file://mainwindow.ui \
 "
 
+S = "${WORKDIR}"
+
 DEPENDS += "qtbase wayland"
 RDEPENDS:${PN} += "qtwayland"
 
