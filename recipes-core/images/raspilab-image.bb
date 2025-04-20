@@ -3,7 +3,7 @@ SUMMARY = "RaspiLab production image"
 IMAGE_FSTYPES = "ext4.xz rpi-sdimg"
 SDIMG_ROOTFS_TYPE = "ext4.xz"
 
-IMAGE_FEATURES += "splash"
+IMAGE_FEATURES += "package-management splash"
 
 GLIBC_GENERATE_LOCALES="de_DE.ISO-8859-1 de_DE.UTF-8 en_US.ISO-8859-1 en_US.UTF-8 en_GB.ISO-8859-1 en_GB.UTF-8"
 IMAGE_LINGUAS = "de-de en-us en-gb"
@@ -24,6 +24,9 @@ CORE_OS = "\
     glibc-utils \
     localedef \
     raspilab-locales \
+    rsync \
+    coreutils \
+    apt \
 "
 
 EXTRA_TOOLS = " \
